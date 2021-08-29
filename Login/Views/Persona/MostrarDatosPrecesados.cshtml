@@ -1,0 +1,19 @@
+﻿
+@{ ViewBag.Title = "MostrarDatosPrecesados";
+    Layout = "~/Views/Shared/_Layout.cshtml"; }
+
+@using (Html.BeginForm( "MostrarDatosProcesados","Persona", FormMethod.Post))
+    
+{
+<h1>TOTAL</h1>
+<label>@ViewBag.total</label>
+<br />
+
+<h4>Total del descuento</h4>
+<label>@ViewBag.totaldes</label>
+<br />
+
+<h4>Total con descuento</h4>
+<label>@ViewBag.totalcondes</label>
+
+}

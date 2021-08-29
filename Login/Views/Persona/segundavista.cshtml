@@ -1,0 +1,26 @@
+﻿
+@{ ViewBag.Title = "segundavista";
+    Layout = "~/Views/Shared/_Layout.cshtml"; }
+
+
+@using (Html.BeginForm("MostrarDatosPrecesados", "Persona", FormMethod.Post))
+{
+<label>Nombre</label>
+<br />
+<input type="text" name="nombre" />
+<br />
+<label>horas tr</label>
+<br />
+<input type="text" name="hrstrab" />
+<br />
+<label>Antiguedad</label>
+<br />
+<input type="text" name="antiguedad" />
+<br />
+<label>valorH tr</label>
+<br />
+<input type="text" name="valorH" />
+<br />
+<input type="submit" />
+}
+
